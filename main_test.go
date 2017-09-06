@@ -23,5 +23,7 @@ func TestD(t *testing.T) {
 }
 
 func TestE(t *testing.T) {
-	time.Sleep(2 * time.Second)
+	t.Run("F", func(t *testing.T) {
+	})
+	time.Sleep(1 * time.Second)
 }
